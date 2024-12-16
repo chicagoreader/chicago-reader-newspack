@@ -9,11 +9,11 @@
 defined( 'ABSPATH' ) || exit;
 
 function chicago_reader_scripts() {
-	wp_enqueue_style(
-		'chicago-reader',
-		WP_PLUGIN_URL . '/chicago-reader-newspack/css/chicago-reader.css',
-		array(),
-		filemtime( WP_PLUGIN_DIR . '/chicago-reader-newspack/css/chicago-reader.css' ),
-	);
+  wp_enqueue_style(
+    'chicago-reader',
+    WP_PLUGIN_URL . '/chicago-reader-newspack/css/chicago-reader.css',
+    array(),
+    filemtime( WP_PLUGIN_DIR . '/chicago-reader-newspack/css/chicago-reader.css' ),
+  );
 }
 add_action('wp_enqueue_scripts', 'chicago_reader_scripts', 99);
