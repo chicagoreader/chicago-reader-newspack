@@ -8,7 +8,7 @@ background-color: papayawhip;
 
 /* pasted in from Music front (bottom custom html block) 12/18/24 */
 
-.page-id-11032856 {
+.section-front {
 
   #evvnt-calendar-widget {
     margin-bottom: 5em;
@@ -80,6 +80,7 @@ background-color: papayawhip;
     margin-right: auto !important;
     border: 2px solid #FFD210;
     border-radius: 1.5rem;
+    padding: 30px;
   }
 
   div.fixtures-box h3 {
@@ -136,7 +137,6 @@ background-color: papayawhip;
   div.section-signup {
     margin-bottom: 2.5em;
   }
-
 
   h2 a:hover {
     text-decoration: underline !important;
@@ -293,6 +293,19 @@ background-color: papayawhip;
   @media (max-width: 769px) {
     div.thisweek_block h2 a {}
 
+  }
+
+  /* special cases for individual fronts */
+
+  /* hide the sponsor label on poetry corner */
+  &.books {
+    div.fixtures-box div.sponsor-label {
+      display: none !important;
+    }
+    /* hide the R in the feed because all book reviews are recommended */
+    div.indent article.tag-reader-recommended h2:before {
+      content: '';
+    }
   }
 }
 

@@ -15,5 +15,11 @@ function chicago_reader_scripts() {
     array(),
     filemtime( WP_PLUGIN_DIR . '/chicago-reader-newspack/css/chicago-reader.css' ),
   );
+  wp_enqueue_script(
+    'chicago-reader',
+    WP_PLUGIN_URL . '/chicago-reader-newspack/js/chicago-reader.js',
+    array(),
+    filemtime( WP_PLUGIN_DIR . '/chicago-reader-newspack/js/chicago-reader.js' ),
+  );
 }
 add_action('wp_enqueue_scripts', 'chicago_reader_scripts', 99);
