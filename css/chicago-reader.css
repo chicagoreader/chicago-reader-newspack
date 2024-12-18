@@ -124,7 +124,6 @@ background-color: papayawhip;
     text-wrap: pretty;
   }
 
-
   div.lead-secondary {
     margin-top: 3em !important;
   }
@@ -180,7 +179,6 @@ background-color: papayawhip;
       border: 1px solid #D4D4D4;
     }
 
-
     h1.category-head {
       font-size: 3em !important;
     }
@@ -211,12 +209,12 @@ background-color: papayawhip;
 
   div.thisweek_mainblock {
     /* background-color: #fff6cf;
-  border: solid;
-  border-color: #FFD210;
-  border-width: 2px;
-  border-radius: 10px;
-  padding: 1rem;
-  margin-left: 1rem;  */
+    border: solid;
+    border-color: #FFD210;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-left: 1rem;  */
   }
 
   div.thisweek_mainblock h2.block_title {
@@ -296,9 +294,6 @@ background-color: papayawhip;
     div.thisweek_block h2 a {}
 
   }
-
-
-
 }
 
 /* "additional CSS" from the Wordpress Customizer pasted 12/18/24 */
@@ -352,11 +347,9 @@ a:focus {
 }
 
 /* 2024/10/17 get rid of the first item on the Topic Menu*/
-
 nav.highlight-menu li:first-child {
   display: none;
 }
-
 
 /* Nov 28 - Fix for the subtitle spacing */
 .entry-header .newspack-post-subtitle {
@@ -581,7 +574,6 @@ article#post-10953786 div.entry-content h3 {
 .sponsored-posts-block .article-section-title span strong a {
   display: none;
 }
-
 
 .bottom-margin-min40 {
   margin-bottom: -40px !important;
