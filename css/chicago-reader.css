@@ -1,5 +1,249 @@
 /* hello, world! */
 
+/* uncomment this to make sure you've successfully installed the plug in
 body {
-  /* background-color: papayawhip; */
+background-color: papayawhip;
+} */
+
+/* "additional CSS" from the Wordpress Customizer pasted 12/18/24 */
+
+/* 2024/10/31 nav button updates for adding "podcasts" */
+.nav3 a {
+  font-size: 16px;
+  background-color:white;
+  padding:0;
+  font-weight: 300;
+	transition: none !important;
+	color: var(--newspack-theme-color-text-light);
+}
+
+.nav3 a:hover {
+	background-color: white !important;
+	color: black !important;
+	text-decoration: underline;
+}
+
+.nav3 li a:focus {
+  background-color: white !important;
+  color: black !important;
+}
+
+.nav3 li:last-child a {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 0.75rem;
+  font-weight: 700;
+}
+
+.nav3 li:last-child a:hover {
+	background-color: #FFD210 !important;
+	color: black !important;
+	text-decoration: none;
+}
+
+.mobile-sidebar .nav3 ul {
+  display: flex;
+}
+
+.mobile-sidebar .nav3 li:not(:last-child) a {
+  padding-left: 0;
+}
+
+/* 2024/10/31 outlining focused links is nuts? why? */
+a:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+/* 2024/10/17 get rid of the first item on the Topic Menu*/
+
+nav.highlight-menu li:first-child {
+	display: none;
+}
+
+
+/* Nov 28 - Fix for the subtitle spacing */
+.entry-header .newspack-post-subtitle {
+  margin-bottom: 1.3em;
+}
+
+@media (min-width: 600px) {
+  .entry-header .newspack-post-subtitle {
+    margin-bottom: 2.3em;
+	}
+}
+
+/**
+ * Custom Reader font.
+ */
+@font-face {
+    font-family: 'reader';
+    src: url('/wp-content/uploads/fonts/Reader-webfont.eot');
+    src: url('/wp-content/uploads/fonts/Reader-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/wp-content/uploads/fonts/Reader-webfont.woff2') format('woff2'),
+         url('/wp-content/uploads/fonts/Reader-webfont.woff') format('woff'),
+         url('/wp-content/uploads/fonts/Reader-webfont.ttf') format('truetype'),
+         url('/wp-content/uploads/fonts/Reader-webfont.svg#readerregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/**
+ * Reverse "R" logo at end of content.
+ * Legacy content has it baked in, so hide those instances.
+ * Then, add styles for it to be appended to all posts automatically, and to any element with the class 'endbug-shortcode'.
+ */
+span.readerFont {
+	display: none;
+}
+
+.endbug-shortcode::after,
+.single-post .entry-content > p:not([class]):last-of-type::after {
+	content: 'v';
+	display: inline;
+	font-family: 'reader';
+	margin-left: 0.25em;
+}
+
+.endbug-shortcode-alt::after {
+	content: 'R';
+	display: inline;
+	font-family: 'reader';
+	margin-left: 0.25em;
+}
+
+/**
+ * Info boxes.
+ */
+.info-box span.readerFont {
+	display: inline;
+	font-family: 'reader';
+	margin-right: 0.25em;
+}
+.info-box > p {
+	font-size: 16px;
+}
+
+/**
+ * Beautify issue tag archive descriptions.
+ */
+body[class*="tag-vol-"] .page-subtitle {
+	display: none;
+}
+
+body[class*="tag-vol-"] .taxonomy-description {
+	font-style: normal;
+}
+
+body[class*="tag-vol-"] .taxonomy-description a {
+	text-decoration: none;
+}
+
+/**
+ * Display image credits on their own line.
+ */
+.image-credit {
+	display: block;
+}
+
+/**
+ * Legacy caption/credit styles for inline embeds.
+ */
+.entry-content [class*='image'] ul,
+.entry-content [class*='Image'] ul,
+.blogImageCenter + ul,
+.blogImageLeft + ul,
+.blogImageRight + ul {
+	list-style: none;
+	margin-top: 0;
+	padding-left: 0;
+}
+.imageCredit,
+.imageCaption {
+	font-family: "Poppins","-apple-system","BlinkMacSystemFont","Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue","sans-serif";
+	font-size: 0.7em;
+}
+
+/**
+ * The "image archive" linked to from legacy embed credits doesn't exist on WP.
+ */
+.imageCredit a,
+.imageCaption a {
+	pointer-events: none;
+	text-decoration: none;
+}
+/**
+ * Chicago Reader Nonprofit Guide: hide headline on page 
+*/
+.postid-10947956 .entry-header .entry-title,
+.postid-10947956 .entry-header .cat-links,
+.postid-10947956 .entry-header .entry-meta .byline
+{
+display: none;
+}
+
+/**
+ * Hide bylines on Reader Partners category articles
+ */
+/*
+.category-reader-partners .entry-meta .byline { display: none; }
+*/
+
+/**
+ *  Hide bylines on Meet the Reader series (category)
+ */
+.category-meet-the-reader .entry-meta .byline { display: none; }
+
+/**
+ * Replicate drop cap styles from Newspack theme.
+ */
+.DropCap:not(:focus)::first-letter {
+	float: left;
+  font-size: 4em;
+  line-height: 0.75;
+  margin: 0.125em 0.75rem 0 0;
+  position: relative;
+}
+
+/* Make legacy Early Warnings tables and lists a bit more attractive */
+article#post-10940926 ul, article#post-11825 ul { list-style-type: none; }
+article#post-10940926 table, article#post-11825 table, article#post-10940926 tr, article#post-11825 tr, article#post-10940926 td, article#post-11825 td { border-width: 0; }
+
+/* Best of Chicago 2021 poll winners heading styles */
+/* Best of Chicago 2021 poll winners heading styles */
+article#post-10953784 div.entry-content h3,
+article#post-10953785 div.entry-content h3,
+article#post-10953781 div.entry-content h3,
+article#post-10953789 div.entry-content h3,
+article#post-10953788 div.entry-content h3,
+article#post-10953787 div.entry-content h3,
+article#post-10953786 div.entry-content h3 { 
+ font-weight: lighter; margin-top: 2em; text-transform: uppercase; 
+ }/* Arts & Culture */
+article#post-10953784 div.entry-content h3 { color: rgb(139, 101, 150); }
+/* Buy Local*/
+article#post-10953789 div.entry-content h3 { color: rgb(83, 176, 210); }
+/* Cannabis */
+article#post-10953781 div.entry-content h3 { color: rgb(0, 107, 92); }
+/* City Life */
+article#post-10953785 div.entry-content h3 { color: rgb(179, 126, 44); }
+/* Food & Drink */
+article#post-10953788 div.entry-content h3 { color: rgb(212, 68, 102); }
+/* Music & Nightlife */
+article#post-10953787 div.entry-content h3 { color: rgb(32, 64, 120); }
+/* Sports & Recreation */
+article#post-10953786 div.entry-content h3 { color: rgb(233, 121, 63); }
+
+/* Sponsor block label/flag for homepage */
+.sponsored-posts-block .article-section-title span a,
+.sponsored-posts-block .article-section-title span
+{   line-height: 1;
+  padding: .3em .5em;
+	background: #fed850;
+  color: #000; }
+.sponsored-posts-block .article-section-title span strong a { display: none; } 
+
+
+.bottom-margin-min40 {
+	margin-bottom: -40px!important;
 }
