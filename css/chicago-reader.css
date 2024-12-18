@@ -5,6 +5,290 @@ body {
 background-color: papayawhip;
 } */
 
+
+/* pasted in from Music front (bottom custom html block) 12/18/24 */
+
+.page-id-11032856 {
+
+#evvnt-calendar-widget {
+  margin-bottom: 5em;
+  }
+  
+  h1.category-head {
+  margin-bottom: 0px !important;
+  font-size: 2.5em !important;
+  }
+  
+  h3.section-head {
+  font-size: 1.6em !important;
+  }
+  
+  h3.fixtures-box {
+  margin-bottom: 0px !important;
+  }
+  
+  div.newspack-post-subtitle {
+  text-wrap: pretty;
+  }
+  
+  p.category-subhead {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  text-wrap: pretty;
+  }
+  
+  div.indent article.tag-reader-recommended h2:before {
+      content: 'R ';
+      display: inline;
+      font-family: 'reader';
+      color: #facc05;
+  font-weight: normal;
+  }
+  
+  div.lead-story img {
+  width: 85% !important;
+  margin-bottom: .75em;
+  border-radius: 4px;
+  border: 1px solid #D4D4D4;
+  }
+  
+  div.indent img, div.lead-secondary img {
+  width: 70% !important;
+  border-radius: 4px;
+  border: 1px solid #D4D4D4;
+  }
+  
+  div.indent div.ad img {
+  width: 100% !important;
+  }
+  
+  div.ad-block {
+  margin-top: 3em !important;
+  margin-bottom: 3em !important;
+  }
+  
+  div.thisweek_block {
+  width: 80%;
+  }
+  
+  div.fixtures-box {
+  margin-top: 1.5em !important;
+  margin-bottom: 3em !important;
+  width: 90%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  border: 2px solid #FFD210;
+  border-radius: 1.5rem;
+  }
+  
+  div.fixtures-box h3 {
+  display: none;
+  }
+  
+  div.fixtures-box div.fixture-cols {
+  gap: 10px;
+  }
+  
+  div.fixtures-box p a, p.more a {
+  text-decoration: underline !important;
+  font-family: var(--newspack-theme-font-heading);
+  }
+  
+  div.fixtures-box h4 a:hover, h2.more a:hover {
+  color: #737373;
+  }
+  
+  div.fixtures-box div.fixture-cols {
+  margin-bottom: 0;
+  }
+  
+  div.fixtures-box div.fixture-leftcol {
+  margin-bottom: 1em;
+  }
+  
+  div.fixtures-box div.fixture-leftcol figure {
+  margin-bottom: 0px;
+  }
+  
+  div.fixtures-box div.fixture-leftcol img {
+  width: 60% !important;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  div.fixtures-box div.fixture-leftcol p {
+  margin-top: .5em;
+  text-wrap: pretty;
+  }
+  
+  
+  div.lead-secondary {
+  margin-top: 3em !important;
+  }
+  
+  div.lead-secondary img {
+  margin-bottom: .5em;
+  }
+  
+  div.indent .wpnbha.is-grid article, div.section-signup {
+  margin-bottom: 2.5em;
+  }
+  
+  
+  h2 a:hover {
+  text-decoration: underline !important;
+  }
+  
+  div.lead-stories div.cat-links, div.everything div.cat-links {
+  color: #00AEEF;
+  }
+  
+  div.everything article.category-movie-review div.cat-links, div.everything div.cat-hide, div.lead-stories div.cat-hide {
+  display: none;
+  }
+  
+  div.feed-oneup {
+  margin-bottom: 2.5em;
+  }
+  
+  @media (min-width: 767px) { 
+  div.indent, div.thisweek-block {
+  padding-left: 5em;
+  padding-right: 5em;
+  }
+  
+  div.fixture-rightcol img {
+  width: 70% !important;
+  }
+  
+  div.triple-fixture {
+  padding: 2em;
+  }
+  
+  div.fixture-rightcol img, div.triple-fixture figure img {
+  border-radius: 4px;
+  border: 1px solid #D4D4D4;
+  }
+  
+  
+  h1.category-head {
+  font-size: 3em !important;
+  }
+  
+  h3.section-head {
+  font-size: 1.85em !important;
+  }
+  
+  div.fixtures-box {
+  width: 70% !important;
+  }
+  
+  div.fixtures-box div.fixture-leftcol img {
+      width: 100% !important;
+  }
+  
+  div.fixtures-box h2 {
+  margin-bottom: 0px !important;
+  }
+  
+  div.fixtures-box p.subhead {
+  margin-top: 0;
+  text-wrap: pretty;
+  }
+     }
+  
+/* listings box CSS */
+
+div.thisweek_mainblock {
+  /* background-color: #fff6cf;
+  border: solid;
+  border-color: #FFD210;
+  border-width: 2px;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-left: 1rem;  */
+  }
+  
+  div.thisweek_mainblock h2.block_title {
+  background-color: #FFD210;
+  color: black;
+  text-transform: uppercase;
+  font-size: .75em;
+  padding: .5em;
+  border-radius: 4px;
+  margin-bottom: 1em;
+  }
+  
+  div.thisweek_mainblock div.thisweek_block {
+  margin-top: 1em;
+  }
+  
+  div.thisweek_mainblock .wpnbha article {
+  margin-bottom: .6em;
+  }
+  
+  div.thisweek_block {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  }
+  
+  div.thisweek_block h2 a:hover {
+  color: black !important;
+  text-decoration: underline !important;
+  }
+  
+  div.thisweek_block article.tag-reader-recommended h2::before {
+      content: 'R ';
+      display: inline;
+      font-family: 'reader';
+      color: #facc05;
+  font-weight: normal;
+  margin-left: -23px;
+  }
+  
+  div.thisweek_block h2, div.thisweek_block h2.entry-title {
+  text-wrap: pretty;
+  }
+  
+  div.thisweek_block h2 a, div.thisweek_block h2.entry-title {
+  font-size: 1em !important; 
+  font-weight: 400;
+  }
+  
+  div.thisweek_mainblock div.thisweek_block {
+  padding-left: 23px;
+  padding-right: 0px;
+  }
+  
+  div.thisweek_block p {
+  display: none;
+  }
+  
+  div.thisweek_block h2.promo-line a strong {
+  text-weight: 900 !important;
+  color: #00AEEF !important;
+  text-decoration: underline !important;
+  }
+  
+  div.thisweek_block h2.promo-line a:hover, div.thisweek_block h2.promo-line a:hover strong {
+  color: black !important;
+  }
+  
+  div.thisweek_block .promo-line i {
+  font-style: italic !important;
+  }
+  
+  @media (max-width: 769px) {
+  div.thisweek_block h2 a {
+  }
+  
+  }
+  
+
+
+}
+
 /* "additional CSS" from the Wordpress Customizer pasted 12/18/24 */
 
 /* 2024/10/31 nav button updates for adding "podcasts" */
