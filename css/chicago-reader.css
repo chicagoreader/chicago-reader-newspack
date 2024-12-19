@@ -296,16 +296,20 @@ background-color: papayawhip;
   }
 
   /* special cases for individual fronts */
+  /* to use, add an additional class to the top-level section front block */
 
-  /* hide the sponsor label on poetry corner */
   &.books {
+
+    /* hide the sponsor label on poetry corner */
     div.fixtures-box div.sponsor-label {
       display: none !important;
     }
+    
     /* hide the R in the feed because all book reviews are recommended */
     div.indent article.tag-reader-recommended h2:before {
       content: '';
     }
+
   }
 }
 
