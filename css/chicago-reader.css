@@ -114,7 +114,8 @@ background-color: papayawhip;
     margin-bottom: 0px;
   }
 
-  div.fixtures-box div.fixture-leftcol img {
+  div.fixtures-box div.fixture-leftcol img, 
+  div.fixtures-box div.column-graphic img {
     width: 60% !important;
     margin-left: auto;
     margin-right: auto;
@@ -174,7 +175,7 @@ background-color: papayawhip;
     }
 
     div.fixture-rightcol img,
-    div.triple-fixture figure img {
+    div.triple-fixture article figure img {
       border-radius: 4px;
       border: 1px solid #D4D4D4;
     }
@@ -310,6 +311,20 @@ background-color: papayawhip;
       content: '';
     }
 
+  }
+
+  &.food {
+
+    div.fixtures-box div.foodball-dates {
+      border-radius: 1.5rem;
+      padding-right: 1em;
+      padding-left: 1em;
+      }
+
+    div.fixtures-box div.foodball-dates p {
+      margin-top: 0px !important;
+      margin-bottom: .75em !important;
+    } 
   }
 }
 
