@@ -289,7 +289,6 @@ background-color: papayawhip;
   }
 
   /* special cases for individual fronts */
-  /* to use, add an additional class to the top-level section front block */
 
   &.news {
     /* hide overlines: News & Politics, City Life */
@@ -347,7 +346,6 @@ background-color: papayawhip;
     div.everything article.tag-reader-recommended h2:before {
       content: '';
     }
-
   }
 
   &.film-tv {
