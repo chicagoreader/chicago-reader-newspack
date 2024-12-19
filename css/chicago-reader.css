@@ -37,7 +37,7 @@ background-color: papayawhip;
     text-wrap: pretty;
   }
 
-  div.indent article.tag-reader-recommended h2:before {
+  div.everything article.tag-reader-recommended h2:before {
     content: 'R ';
     display: inline;
     font-family: 'reader';
@@ -52,14 +52,22 @@ background-color: papayawhip;
     border: 1px solid #D4D4D4;
   }
 
-  div.indent img,
+  div.fixtures-box, 
+  div.thisweek-block, 
+  div.everything {
+    width: 90%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  div.everything img,
   div.lead-secondary img {
     width: 70% !important;
     border-radius: 4px;
     border: 1px solid #D4D4D4;
   }
 
-  div.indent div.ad img {
+  div.everything div.ad img {
     width: 100% !important;
   }
 
@@ -68,16 +76,9 @@ background-color: papayawhip;
     margin-bottom: 3em !important;
   }
 
-  div.thisweek_block {
-    width: 80%;
-  }
-
   div.fixtures-box {
     margin-top: 1.5em !important;
     margin-bottom: 3em !important;
-    width: 90%;
-    margin-left: auto !important;
-    margin-right: auto !important;
     border: 2px solid #FFD210;
     border-radius: 1.5rem;
     padding: 30px;
@@ -134,7 +135,7 @@ background-color: papayawhip;
     margin-bottom: .5em;
   }
 
-  div.indent .wpnbha.is-grid article,
+  div.everything .wpnbha.is-grid article,
   div.section-signup {
     margin-bottom: 2.5em;
   }
@@ -160,10 +161,13 @@ background-color: papayawhip;
 
   @media (min-width: 767px) {
 
-    div.indent,
-    div.thisweek-block {
-      padding-left: 5em;
-      padding-right: 5em;
+    div.thisweek-block, 
+    div.fixtures-box {
+      width: 70%;
+    }
+
+    div.everything {
+      width: 82%;
     }
 
     div.fixture-rightcol img {
@@ -186,10 +190,6 @@ background-color: papayawhip;
 
     h3.section-head {
       font-size: 1.85em !important;
-    }
-
-    div.fixtures-box {
-      width: 70% !important;
     }
 
     div.fixtures-box div.fixture-leftcol img {
@@ -237,9 +237,7 @@ background-color: papayawhip;
   }
 
   div.thisweek_block {
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
+    padding-left: 1em;
   }
 
   div.thisweek_block h2 a:hover {
@@ -307,7 +305,7 @@ background-color: papayawhip;
     }
     
     /* hide the R in the feed because all book reviews are recommended */
-    div.indent article.tag-reader-recommended h2:before {
+    div.everything article.tag-reader-recommended h2:before {
       content: '';
     }
 
