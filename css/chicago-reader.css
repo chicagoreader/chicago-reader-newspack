@@ -149,11 +149,6 @@ background-color: papayawhip;
     color: #00AEEF;
   }
 
-  div.lead-stories div.cat-hide,
-  div.everything div.cat-hide {
-    display: none;
-  }
-
   div.feed-oneup {
     margin-bottom: 2.5em;
   }
@@ -296,13 +291,58 @@ background-color: papayawhip;
   /* special cases for individual fronts */
   /* to use, add an additional class to the top-level section front block */
 
-  &.books {
+  &.news {
+    /* hide overlines: News & Politics, City Life */
+    .cat-links a[href$="/category/news/"],
+    .cat-links a[href$="/category/city-life/"] {
+      display:none;
+    }
+  }
 
+  &.city-life {
+    /* hide overlines: News & Politics, City Life, Feature */
+    .cat-links a[href$="/category/news/"],
+    .cat-links a[href$="/category/city-life/"],
+    .cat-links a[href$="/category/city-life/feature-city-life/"] {
+      display:none;
+    }
+  }
+
+  &.visual-arts {
+    /* hide overlines: News & Politics, City Life, Theater Review, Arts & Culture, Visual Arts & Culture, Art Feature */
+    .cat-links a[href$="/category/news/"],
+    .cat-links a[href$="/category/city-life/"],
+    .cat-links a[href$="/category/performing-arts/theater/theater-review/"], 
+    .cat-links a[href$="/category/arts-culture/"], 
+    .cat-links a[href$="/category/visual-arts/"], 
+    .cat-links a[href$="/category/visual-arts/art-feature/"]{
+      display:none;
+    }
+  }
+
+  &.performing-arts {
+    /* hide overlines: News & Politics, City Life, Theater Review */
+    .cat-links a[href$="/category/news/"],
+    .cat-links a[href$="/category/city-life/"],
+    .cat-links a[href$="/category/performing-arts/theater/theater-review/"] {
+      display:none;
+    }
+  }
+
+  &.books {
+    /* hide overlines: News & Politics, City Life, Theater Review, Arts & Culture, Visual Arts & Culture, Book Review */
+    .cat-links a[href$="/category/news/"],
+    .cat-links a[href$="/category/city-life/"],
+    .cat-links a[href$="/category/performing-arts/theater/theater-review/"], 
+    .cat-links a[href$="/category/arts-culture/"], 
+    .cat-links a[href$="/category/visual-arts/"], 
+    .cat-links a[href$="/category/books/book-review/"]{
+      display:none;
+    }
     /* hide the sponsor label on poetry corner */
     div.fixtures-box div.sponsor-label {
       display: none !important;
     }
-    
     /* hide the R in the feed because all book reviews are recommended */
     div.everything article.tag-reader-recommended h2:before {
       content: '';
@@ -310,27 +350,25 @@ background-color: papayawhip;
 
   }
 
-  &.food {
+  &.film-tv {
+    /* hide overlines: Movie Review */
+    .cat-links a[href$="/category/film-tv/movie-review/"] {
+      display:none;
+    }
+  }
 
+  &.food {
     /* round the special foodball box */
     div.fixtures-box div.foodball-dates {
       border-radius: 1.5rem;
       padding-right: 1em;
       padding-left: 1em;
     }
-
     /* make the text nicer in the special foodball box */
     div.fixtures-box div.foodball-dates p {
       margin-top: 0px !important;
       margin-bottom: .75em !important;
     } 
-  }
-
-  &.film-tv {
-    /* hide the overlines for movie reviews because reviews are prefixed "Review" */
-    div.everything article.category-movie-review div.cat-links {
-      display: none;
-    }
   }
 }
 
