@@ -53,7 +53,7 @@ background-color: papayawhip;
   }
 
   div.fixtures-box, 
-  div.thisweek-block, 
+  div.thisweek, 
   div.everything {
     width: 90%;
     margin-left: auto !important;
@@ -149,9 +149,8 @@ background-color: papayawhip;
     color: #00AEEF;
   }
 
-  div.everything article.category-movie-review div.cat-links,
-  div.everything div.cat-hide,
-  div.lead-stories div.cat-hide {
+  div.lead-stories div.cat-hide,
+  div.everything div.cat-hide {
     display: none;
   }
 
@@ -161,7 +160,7 @@ background-color: papayawhip;
 
   @media (min-width: 767px) {
 
-    div.thisweek-block, 
+    div.thisweek, 
     div.fixtures-box {
       width: 70%;
     }
@@ -313,16 +312,25 @@ background-color: papayawhip;
 
   &.food {
 
+    /* round the special foodball box */
     div.fixtures-box div.foodball-dates {
       border-radius: 1.5rem;
       padding-right: 1em;
       padding-left: 1em;
-      }
+    }
 
+    /* make the text nicer in the special foodball box */
     div.fixtures-box div.foodball-dates p {
       margin-top: 0px !important;
       margin-bottom: .75em !important;
     } 
+  }
+
+  &.film-tv {
+    /* hide the overlines for movie reviews because reviews are prefixed "Review" */
+    div.everything article.category-movie-review div.cat-links {
+      display: none;
+    }
   }
 }
 
