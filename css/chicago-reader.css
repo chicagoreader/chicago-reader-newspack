@@ -229,6 +229,7 @@ background-color: papayawhip;
     padding-right: 0px;
   }
 
+  /* positions the anchor over the excerpt, and hides the text inside */
   .thisweek_block article .entry-wrapper a {
     position: absolute;
     top: 0;
@@ -257,8 +258,8 @@ background-color: papayawhip;
     color: #facc05;
     font-weight: normal;
     margin-left: -23px;
-    position: absolute;
     margin-top: -2px;
+    position: absolute;
   }
 
   .thisweek_block h2.promo-line a strong {
@@ -274,10 +275,6 @@ background-color: papayawhip;
 
   .thisweek_block .promo-line i {
     font-style: italic !important;
-  }
-
-  @media (max-width: 769px) {
-    .thisweek_block h2 a {}
   }
 
   /* special cases for individual fronts */
