@@ -202,17 +202,7 @@ background-color: papayawhip;
 
   /* listings box CSS */
 
-  div.thisweek_mainblock {
-    /* background-color: #fff6cf;
-    border: solid;
-    border-color: #FFD210;
-    border-width: 2px;
-    border-radius: 10px;
-    padding: 1rem;
-    margin-left: 1rem;  */
-  }
-
-  div.thisweek_mainblock h2.block_title {
+  .thisweek_mainblock h2.block_title {
     background-color: #FFD210;
     color: black;
     text-transform: uppercase;
@@ -222,70 +212,72 @@ background-color: papayawhip;
     margin-bottom: 1em;
   }
 
-  div.thisweek_mainblock div.thisweek_block {
+  .thisweek_mainblock .thisweek_block {
     margin-top: 1em;
   }
 
-  div.thisweek_mainblock .wpnbha article {
+  .thisweek_mainblock .wpnbha article {
     margin-bottom: .6em;
   }
 
-  div.thisweek_block {
+  .thisweek_block {
     padding-left: 1em;
   }
 
-  div.thisweek_block h2 a:hover {
-    color: black !important;
-    text-decoration: underline !important;
+  .thisweek_mainblock .thisweek_block {
+    padding-left: 23px;
+    padding-right: 0px;
   }
 
-  div.thisweek_block article.tag-reader-recommended h2::before {
+  .thisweek_block article .entry-wrapper a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    color: transparent;
+  }
+
+  .thisweek_block article .entry-wrapper p {
+    font-family: "Poppins","Helvetica","sans-serif";
+    font-size: 20px !important;
+    line-height: 1.2em;
+    text-wrap: pretty;
+  }
+
+  .thisweek_block article .entry-wrapper:hover {
+    text-decoration: underline;
+  }
+
+  .thisweek_block article.tag-reader-recommended::before {
     content: 'R ';
     display: inline;
     font-family: 'reader';
     color: #facc05;
     font-weight: normal;
     margin-left: -23px;
+    position: absolute;
+    margin-top: -2px;
   }
 
-  div.thisweek_block h2,
-  div.thisweek_block h2.entry-title {
-    text-wrap: pretty;
-  }
-
-  div.thisweek_block h2 a,
-  div.thisweek_block h2.entry-title {
-    font-size: 1em !important;
-    font-weight: 400;
-  }
-
-  div.thisweek_mainblock div.thisweek_block {
-    padding-left: 23px;
-    padding-right: 0px;
-  }
-
-  div.thisweek_block p {
-    display: none;
-  }
-
-  div.thisweek_block h2.promo-line a strong {
+  .thisweek_block h2.promo-line a strong {
     text-weight: 900 !important;
     color: #00AEEF !important;
     text-decoration: underline !important;
   }
 
-  div.thisweek_block h2.promo-line a:hover,
-  div.thisweek_block h2.promo-line a:hover strong {
+  .thisweek_block h2.promo-line a:hover,
+  .thisweek_block h2.promo-line a:hover strong {
     color: black !important;
   }
 
-  div.thisweek_block .promo-line i {
+  .thisweek_block .promo-line i {
     font-style: italic !important;
   }
 
   @media (max-width: 769px) {
-    div.thisweek_block h2 a {}
-
+    .thisweek_block h2 a {}
   }
 
   /* special cases for individual fronts */
