@@ -280,27 +280,30 @@ background-color: papayawhip;
   /* special cases for individual fronts */
 
   &.news {
-    /* hide overlines: News & Politics, City Life */
-    .cat-links a[href$="/category/news/"],
-    .cat-links a[href$="/category/city-life/"] {
+    /* hide overlines: News & Politics */
+    .cat-links a[href$="/category/news/"] {
       display:none;
     }
   }
 
   &.city-life {
-    /* hide overlines: News & Politics, City Life, Feature */
-    .cat-links a[href$="/category/news/"],
+    /* hide overlines: City Life, Feature */
     .cat-links a[href$="/category/city-life/"],
     .cat-links a[href$="/category/city-life/feature-city-life/"] {
       display:none;
     }
   }
 
+  &.music {
+    /* hide overline: concert preview */
+    .cat-links a[href$="/category/music/concert-preview/"] {
+      display: none;
+    }
+
+  }
+
   &.visual-arts {
-    /* hide overlines: News & Politics, City Life, Theater Review, Arts & Culture, Visual Arts & Culture, Art Feature */
-    .cat-links a[href$="/category/news/"],
-    .cat-links a[href$="/category/city-life/"],
-    .cat-links a[href$="/category/performing-arts/theater/theater-review/"], 
+    /* hide overlines: Arts & Culture, Visual Arts & Culture, Art Feature */
     .cat-links a[href$="/category/arts-culture/"], 
     .cat-links a[href$="/category/visual-arts/"], 
     .cat-links a[href$="/category/visual-arts/art-feature/"]{
@@ -309,21 +312,15 @@ background-color: papayawhip;
   }
 
   &.performing-arts {
-    /* hide overlines: News & Politics, City Life, Theater Review */
-    .cat-links a[href$="/category/news/"],
-    .cat-links a[href$="/category/city-life/"],
+    /* hide overlines: Theater Review */
     .cat-links a[href$="/category/performing-arts/theater/theater-review/"] {
       display:none;
     }
   }
 
   &.books {
-    /* hide overlines: News & Politics, City Life, Theater Review, Arts & Culture, Visual Arts & Culture, Book Review */
-    .cat-links a[href$="/category/news/"],
-    .cat-links a[href$="/category/city-life/"],
-    .cat-links a[href$="/category/performing-arts/theater/theater-review/"], 
+    /* hide overlines: Arts & Culture, Book Review */
     .cat-links a[href$="/category/arts-culture/"], 
-    .cat-links a[href$="/category/visual-arts/"], 
     .cat-links a[href$="/category/books/book-review/"]{
       display:none;
     }
@@ -345,6 +342,10 @@ background-color: papayawhip;
   }
 
   &.food {
+    /* hide overlines: Food & Drink */
+    .cat-links a[href$="/category/food/"] {
+      display:none;
+    }
     /* round the special foodball box */
     div.fixtures-box div.foodball-dates {
       border-radius: 1.5rem;
