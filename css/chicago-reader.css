@@ -297,8 +297,9 @@ background-color: papayawhip;
   }
 
   &.music {
-    /* hide overline: concert preview */
-    .cat-links a[href$="/category/music/concert-preview/"] {
+    /* hide overline: Music, concert preview */
+    .cat-links a[href$="/category/music/concert-preview/"], 
+    .cat-links a[href$="/category/music/"] {
       display: none;
     }
 
