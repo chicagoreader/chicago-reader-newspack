@@ -5,6 +5,16 @@ body {
 background-color: papayawhip;
 } */
 
+/* tweaks for end of article recirculation widgets, formerly housed in the widget area */
+.widget.below-content {
+  /* forces subhead font to be serif instead of sans serif */
+  font-family: var(--newspack-theme-font-body);
+}
+
+.widget.below-content div.entry-wrapper {
+  /* adds more margin below each box */
+  margin-bottom: 1em; 
+}
 
 /* pasted in from Music front (bottom custom html block) 12/18/24 */
 
@@ -387,15 +397,15 @@ background-color: papayawhip;
 }
 
 .nav3 li:last-child a {
-  background-color: black;
+  background-color: red;
   color: white;
   padding: 0.5rem 0.75rem;
   font-weight: 700;
 }
 
 .nav3 li:last-child a:hover {
-  background-color: #FFD210 !important;
-  color: black !important;
+  background-color: black !important;
+  color: white !important;
   text-decoration: none;
 }
 
